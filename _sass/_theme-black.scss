@@ -2,12 +2,14 @@
 
 // Color variables
 $black: #181818;
-$red: #E74727;
-$red-small: #DC3918;
+$red: #e74727;
+$red-small: #dc3918;
 $white: #fff;
+$gradient-dark: linear-gradient(to right, #6441a5, #2a0845);
 
 // Config
-$color-background: $black !default;
+$color-background: $gradient-dark !default;
+$body-color: #e0d9ed;
 $color-dot-accent: $red !default;
 $color-foreground: $white !default;
 $color-title: $white !default;
@@ -23,9 +25,4 @@ $color-primary-link: $red !default;
 }
 
 // Import sass partials (used in all themes)
-@import
-        "variables",
-        "base",
-        "components",
-        "utilities"
-;
+@import "variables", "base", "components", "utilities";
